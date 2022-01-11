@@ -1,0 +1,14 @@
+{
+  "site": {
+    "id": "76dbb123-4290-4196-88a9-4c6b395efbf8",
+    "team": "90f1b36e-adb9-40d6-a419-8c64a64aff0a",
+    "platform": "ipfs",
+    "source": "ipfs",
+    "name": "ssspace-itera-one-cold-morning-7722"
+  },
+  "build": {
+    "baseDir": "",
+    "publicDir": "dist",
+    "rootDir": ""
+  }
+}

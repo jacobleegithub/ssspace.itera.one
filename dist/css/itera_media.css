@@ -1,0 +1,213 @@
+@media screen and (max-width:1450px){
+.twobut button {
+    width: 100px;
+    margin: 20px 5px;
+}
+.experience_block h3{
+	width: 90%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+}
+@media screen and (max-width:1350px){
+.experience_block{
+	text-align: left;
+}
+.experience_block > div{
+	width: 30%;
+}
+}
+
+@media screen and (max-width:1200px){
+.w1200{
+	width: 100%;
+}
+.nfts_block > div h3{
+	width: 90%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+.kv{
+	height: 600px;
+}
+.footer span{
+	margin-left: 300px;
+}
+}
+@media screen and (max-width:1050px){
+.w1000{
+	width: 90%;
+	margin: 0 5%;
+}
+}
+@media screen and (max-width:900px){
+.kv{
+	height: 500px;
+}
+.nfts_block > div:not(:last-child),.experience_block > div{
+	width: 45%;
+	margin: 20px 2%;
+}
+.footer span{
+	margin-left: 50px;
+}
+.video_out{
+	width: calc(90vw - 40px);
+	height: calc(90vh - 40px);
+	padding: 20px;
+	top: 7vh;
+	left: 5vw;
+}
+.close{
+	top: -40px;
+}
+}
+@media screen and (max-width:750px){
+.top{
+	display: none;
+}
+.m_top,.toggle{
+	display: block;
+}
+.m_top{
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	width: 100%;
+	height: 72px;
+	background: #394254;
+}
+.m_top .bighead{
+	position: absolute;
+	border: 5px solid #394254;
+	top: 5px;
+	left: 10px;
+	z-index: 203;
+}
+.m_top span{
+	position: absolute;
+	top: 25px;
+	left: 130px;
+	color: #fff;
+}
+.toggle{
+	position: fixed;
+	top:15px;
+	right:15px;
+	z-index: 205;
+	background:url(../img/m_nav.png) no-repeat;
+	background-size: contain;
+	height: 40px;
+	width: 40px;
+}
+.active{
+	background:url(../img/m_close.png) no-repeat;
+	background-size: contain;
+}
+.m_nav{
+	position: fixed;
+	right:0;
+	top:72px;
+	z-index:202;
+	height:100%;
+	width:100%;
+    background: rgba(0,0,0,0.8);
+}
+.m_nav li{
+	width: 100%;
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    padding:30px 0 30px 0;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+	z-index:202;
+    color: #fff;
+}
+.kv{
+	margin-top: 72px;
+}
+.video_out{
+	width: calc(90vw - 40px);
+	height: calc(80vh - 40px);
+	padding: 20px;
+	top: 17vh;
+	left: 5vw;
+}
+}
+@media screen and (max-width:710px){
+.dao_block > div{
+	width: 45%;
+	margin: 20px 2%;
+}
+.dao{
+	background: url(../img/dao_bg.jpg) no-repeat center top #010110;
+	height: 980px;
+}
+.nfts_pic {
+    height: 200px;
+}
+.exb_pic {
+    height: 170px;
+}
+}
+@media screen and (max-width:650px){
+.kv{
+	height: 400px;
+}
+.footer span{
+	margin:20px 0 0 0;
+	display: block;
+}
+.nfts_block > div:not(:last-child), .experience_block > div {
+	display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+.nfts_pic {
+    height: 250px;
+}
+.exb_pic {
+    height: 220px;
+}
+}
+@media screen and (max-width:530px){
+.kv{
+	height: 350px;
+}
+h2 {
+    font-size: 35px;
+    margin: 0 auto;
+    letter-spacing: 0;
+}
+.dao{
+	height: 1250px;
+}
+.dao_block > div{
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+}
+.nfts_block > div:not(:last-child), .experience_block > div {
+	display: block;
+    width: 90%;
+    margin: 20px auto;
+}
+}
+@media screen and (max-width:440px){
+.nfts_pic {
+    height: 220px;
+}
+.exb_pic {
+    height: 200px;
+}
+.about .bighead {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 20px auto;
+}
+}

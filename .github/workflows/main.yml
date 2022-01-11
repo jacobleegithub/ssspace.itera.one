@@ -1,0 +1,5 @@
+on: [push]
+
+jobs:
+  call-workflow:
+    uses: itera-network/itera.one/.github/workflows/main.yml@v1
