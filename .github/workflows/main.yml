@@ -1,5 +1,26 @@
-on: [push]
+on: [push, workflow_call]
 
 jobs:
-  call-workflow:
-    uses: itera-network/itera.one/.github/workflows/main.yml@master
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploying a site
+    steps:
+      - uses: actions/checkout@v2
+      - id: fleek
+        uses: itera-network/action-deploy@master
+        with:
+          apiKey: ${{ secrets.FLEEK_API_KEY }}
+      - run: echo "Deploy url is ${{ steps.fleek.outputs.deployUrl }}"
+      - uses: itera-network/actions-coudflare-dns@master
+        with:
+          name: ${{ github.event.repository.name }}
+          cid: ${{ steps.fleek.outputs.siteCid }}
+          gateway: ${{ secrets.IPFS_GATEWAY }}
+          token: ${{ secrets.CF_API_TOKEN }}
+          zone: ${{ secrets.CF_ZONE_ID }}
+      - uses: up9cloud/action-notify@master
+        if: cancelled() == false
+        env:
+          GITHUB_JOB_STATUS: ${{ job.status }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_TO: ${{ secrets.LINE_TO }}
